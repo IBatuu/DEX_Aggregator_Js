@@ -1,0 +1,158 @@
+[
+    {
+        "name": "Native"
+    },
+    {
+        "name": "Uniswap"
+    },
+    {
+        "name": "Uniswap_V2"
+    },
+    {
+        "name": "Eth2Dai"
+    },
+    {
+        "name": "Kyber"
+    },
+    {
+        "name": "Curve"
+    },
+    {
+        "name": "MultiBridge"
+    },
+    {
+        "name": "Balancer"
+    },
+    {
+        "name": "Balancer_V2"
+    },
+    {
+        "name": "CREAM"
+    },
+    {
+        "name": "Bancor"
+    },
+    {
+        "name": "MakerPsm"
+    },
+    {
+        "name": "mStable"
+    },
+    {
+        "name": "Mooniswap"
+    },
+    {
+        "name": "MultiHop"
+    },
+    {
+        "name": "Shell"
+    },
+    {
+        "name": "Swerve"
+    },
+    {
+        "name": "SnowSwap"
+    },
+    {
+        "name": "SushiSwap"
+    },
+    {
+        "name": "DODO"
+    },
+    {
+        "name": "DODO_V2"
+    },
+    {
+        "name": "CryptoCom"
+    },
+    {
+        "name": "Linkswap"
+    },
+    {
+        "name": "KyberDMM"
+    },
+    {
+        "name": "Smoothy"
+    },
+    {
+        "name": "Component"
+    },
+    {
+        "name": "Saddle"
+    },
+    {
+        "name": "xSigma"
+    },
+    {
+        "name": "Uniswap_V3"
+    },
+    {
+        "name": "Curve_V2"
+    },
+    {
+        "name": "Lido"
+    },
+    {
+        "name": "ShibaSwap"
+    },
+    {
+        "name": "Clipper"
+    },
+    {
+        "name": "PancakeSwap"
+    },
+    {
+        "name": "PancakeSwap_V2"
+    },
+    {
+        "name": "BakerySwap"
+    },
+    {
+        "name": "Nerve"
+    },
+    {
+        "name": "Belt"
+    },
+    {
+        "name": "Ellipsis"
+    },
+    {
+        "name": "ApeSwap"
+    },
+    {
+        "name": "CafeSwap"
+    },
+    {
+        "name": "CheeseSwap"
+    },
+    {
+        "name": "JulSwap"
+    },
+    {
+        "name": "ACryptoS"
+    },
+    {
+        "name": "QuickSwap"
+    },
+    {
+        "name": "ComethSwap"
+    },
+    {
+        "name": "Dfyn"
+    },
+    {
+        "name": "WaultSwap"
+    },
+    {
+        "name": "Polydex"
+    },
+    {
+        "name": "FirebirdOneSwap"
+    },
+    {
+        "name": "JetSwap"
+    },
+    {
+        "name": "IronSwap"
+    }
+]

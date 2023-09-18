@@ -1,0 +1,744 @@
+body {
+    --light: hsl(220, 50%, 90%);
+    --primary: hsl(255, 30%, 55%);
+    --focus: hsl(210, 90%, 50%);
+    --border-color: hsla(0, 0%, 100%, .2);
+    --global-background: hsl(220, 25%, 10%);
+    --background: linear-gradient(to right, hsl(210, 30%, 20%), hsl(255, 30%, 25%));
+    --shadow-1: hsla(236, 50%, 50%, .3);
+    --shadow-2: hsla(236, 50%, 50%, .4);
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans', sans-serif;
+    color: var(--light);
+    background: var(--global-background);
+  }
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+
+*:focus {
+    outline: none;
+}
+#window{
+    position: absolute;
+    margin: auto;
+    top: 150px;
+    right: 0;
+    bottom: 250px;
+    left: 0;
+    display: block;
+    margin-top: 50px;
+    padding: 15px;
+    border-radius: 20px;
+    height: 425px;
+    max-width: 375px;
+    color: var(--light);
+    background: var(--background);
+    box-shadow: var(--m-shadow, .0rem .0rem 2rem .0rem) var(--shadow-1);
+    overflow: hidden;
+}
+#token_modal {
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.493);
+}
+.modal-dialog {
+    height: 600px;
+    max-width: 350px;
+    position: relative;
+    margin: auto;
+    top: 150px;
+    right: 0;
+    bottom: 0px;
+    left: 0;
+    border-radius: 20px;
+    
+}
+.swapbox_select {
+    width: 100px;
+    float: left;
+    border-radius: 25px;
+}
+.swapbox{
+    overflow: none;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: rgba(5, 5, 5, 0.4);
+    border-radius: 20px;
+    border: 1px solid #565656;
+}
+.token_select{
+    padding:5px 0;
+    position: relative;
+    top: 11px;
+}
+.token_select:hover{
+    background-color: rgba(5, 5, 5, 0.4);
+    cursor: pointer;
+    
+}
+.token_row{
+    padding: 5px 10px;
+}
+.token_row:hover{
+    background-color: rgba(255, 255, 255, 0.15);
+    cursor: pointer;
+    border-radius: 25px;
+}
+.gas_estimate_label{
+    padding:5px;
+}
+#chainModal::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;
+}
+
+.modal-body::-webkit-scrollbar{
+    display: none;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;
+}
+.modal-body{
+    height: 500px;
+    overflow: auto;
+    color: var(--light);
+    background: var(--background);
+    box-shadow: var(--m-shadow, .4rem .4rem 1rem .2rem) var(--shadow-1);
+    position: relative;
+}
+
+.token_list_text{
+    text-transform:uppercase; display:inline-block;   color: #ffffff
+}
+
+.token_list_img{
+    height: 23px;
+    width: 23px;   
+    border-radius: 20px;
+}
+
+.modal-content{
+    color: var(--light);
+    background: var(--background);
+    position: relative;
+  
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.modal-title{
+    text-transform:uppercase; display:inline-block;  font-weight: bold; color: #ffffff
+}
+
+.close{
+    color: #ffffff;
+    position: relative;
+    right: 3px;
+}
+
+.close:hover{
+    color: #ffffff;
+}
+
+.to_from_swapbox_select{
+    border-radius: 20px;
+    background-color: rgba(5, 5, 5, 0.4);
+    border: 2px solid rgba(5, 5, 5, 0.4);
+    width: 151px;
+    height: auto;
+    position: relative;
+    left: 50px;
+    text-transform:uppercase; display:inline-block;  font-weight: bold; color: #797777
+}
+
+.token_img{
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+}
+.number {
+    width: 135px;
+    height: auto;
+    border-radius: 20px;
+    background-color: rgba(5, 5, 5, 0);
+    border: 2px solid rgba(5, 5, 5, 0);
+    color: white;
+    position: relative;
+    left: 5px;
+}
+#from_amount {
+    font-size: 23px;
+    background-color: rgba(5, 5, 5, 0);
+}
+
+.from_token_txt{
+    text-transform:uppercase; 
+    display:inline-block; 
+    color: white;
+    position: relative;
+    left: 4px;
+    top: 2px;
+    font-size: 17px;    
+}
+
+.to_token_txt{
+    text-transform:uppercase; 
+    display:inline-block; 
+    color: white;
+    position: relative;
+    left: 4px;
+    top: 2px;
+    font-size: 17px;
+}
+
+#swap_buttonn{
+    background-color: #363636;
+    color: #A8A7A7;
+    box-shadow: 0 0 1px white;
+    border-radius: 20px;
+    font-weight: bold; 
+}
+
+.navbar-brand{
+    color: #A8A7A7;
+    position: relative;
+    left: 50px;
+    bottom: 9px;
+
+}
+
+#login_button{
+    color: var(--light);
+    background: var(--background);
+    box-shadow: var(--m-shadow, 0rem 0rem 1rem 0rem) var(--shadow-1);
+    position: relative;
+  
+    overflow: hidden;
+    border-radius: 20px;
+    font-weight: bold; 
+    position: relative;
+    right: 25px;
+    top: 15px;
+}
+
+#token_list {
+    display:auto;
+}
+.search-bar {
+    border-radius: 20px;
+    color: #ffffff;
+    border: 0px solid #2f2f2f;
+    height: 55px;
+    width: 350px;
+    color: var(--light);
+    background: var(--background);
+    position: relative;
+    overflow: hidden;
+}
+
+.modal-header {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom: 1px solid #565656;
+    padding: 8px;
+    color: var(--light);
+    background: var(--background);
+    box-shadow: var(--m-shadow, .4rem .4rem 1rem .2rem) var(--shadow-1);
+    position: relative;
+  
+    overflow: hidden;
+}
+
+
+
+#to_amount {
+    font-size: 23px;
+}
+
+.coin-amount-placeholder {
+    font-size: 23px;
+    position: absolute;
+    bottom: 8px;
+    left: 90px;
+    color: #A8A7A7;
+}
+
+
+.number:focus ~ .coin-amount-placeholder,
+.number:valid ~ .coin-amount-placeholder {
+  display: none;
+}
+
+#findtoken_modal{
+    position: relative;
+    left: -3px;
+    height: 155px;
+    width: 320px;
+    overflow: scroll;
+    background-color: rgba(5, 5, 5, 0.4);
+    border-radius: 20px;
+}
+.foundTokenSymbolDiv {
+    text-align: center;
+    color: #A8A7A7;
+    font-weight: bold;
+    position: relative;
+    top: 35px;
+
+}
+.foundTokenDetails {
+    text-align: center;
+    color: #A8A7A7;
+    font-weight: bold;
+}
+
+
+.foundTokenState{
+    color: #a31c1c;
+    position: absolute;
+    bottom: 8px;
+    left: 110px;
+}
+
+#selectNewToken {
+    padding: 2px;
+    border-radius: 20px;
+    position: relative;
+    top: 25px;
+    left: 120px;
+    width: 80px;
+}
+#selectNewToken:hover {
+    background-color: rgba(5, 5, 5, 0.4);
+    cursor: pointer;
+}
+
+.swap {
+    width: 342px;
+    height: 40px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    top: 15px;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.swap:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.swap:active {
+    color: #000
+}
+
+.swap:active:after {
+    background: transparent;
+}
+
+.swap:hover:before {
+    opacity: 1;
+}
+
+.swap:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+#settingsButton {
+    position: absolute;
+    bottom: 375px;
+    left: 320px;
+}
+.foundTokenName {
+    position: relative;
+    top: 25px;
+    text-transform:uppercase; display:inline-block; color: #A8A7A7    
+}
+
+#findmodal_close {
+    font-size: 17px;
+    position: relative;
+    right: 12px;
+    top: 8px;
+}
+
+#selectChain {
+    width: auto;
+    height: auto;
+    background-color: rgba(5, 5, 5, 0.0);
+    border-radius: 20px;
+    font-weight: bold; 
+    font-size: 18px;
+    position: relative;
+    right: 250px;
+    bottom: 32px;
+    color: #ffffff  
+}
+
+.chainImage{
+    position: relative;
+    right: 7px;
+    bottom: 2px;
+    height: 25px;
+    width: 25px;
+    border-radius: 20px;
+}
+.chainName {
+    display:inline-block; 
+    position: relative;
+    right: 2px;
+
+}
+
+
+#chainModal{
+    font-weight: bold;
+    height: 150px;
+    width: 180px;
+    overflow: scroll;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    text-align: left;
+}
+
+.chain_list_img {
+    height: 22px;
+    width: 22px;   
+    border-radius: 20px;
+    margin: 5px;
+
+}
+.chain_list_text {
+    text-transform:uppercase; 
+    display:inline-block; 
+    color: #ffffff;
+    font-size: 14px;
+
+}
+
+.dollarValue {
+    font-size: 12px;
+    display: block;
+    margin-left: 10px;
+}
+
+#reverseButton {
+ position: absolute;
+ top: 160px;
+ left: 160px;
+ color: white;
+}
+.fromTokenBalance {
+    color: rgba(255, 255, 255, 0.651);
+    font-size: small;
+    position: absolute;
+    top: 65px;
+    left: 240px;
+}
+.toTokenBalance {
+    color: rgba(255, 255, 255, 0.651);
+    font-size: small;
+    position: absolute;
+    top: 190px;
+    left: 240px;
+}
+
+.fromTokenBalance:hover{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    text-decoration: underline;
+}
+.toTokenBalance:hover{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    text-decoration: underline;
+}
+.btn {
+    color: rgb(255, 255, 255);
+}
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+#gas_estimate {
+    position: relative;
+    left: 7px;
+    bottom: 0px;
+    font-size: small;
+    color: #A8A7A7;
+}
+
+.bi-fuel-pump {
+    position: relative;
+    left: 1px;
+}
+
+#selectChain:hover{
+    background-color: rgba(255, 255, 255, 0.15);
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+#settingsModal {
+    position: absolute;
+    margin: auto;
+    top: 150px;
+    right: 0;
+    bottom: 250px;
+    left: 0;
+    margin-top: 50px;
+    padding: 15px;
+    color: var(--light);
+    background: var(--background);
+    box-shadow: var(--m-shadow, .0rem .0rem 2rem .0rem) var(--shadow-1);
+    display: none;
+    height: 425px;
+    max-width: 375px;
+    border-radius: 20px;
+    z-index: 9998;
+}
+.slippageSetting {
+    text-align: left;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+.slippageInput {
+    position: relative;
+    left: 5%;
+    margin-right: -10px;
+    padding: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 3px;
+    border-radius: 50px;
+    border-radius: 20px;
+    background-color: rgba(5, 5, 5, 0.50);
+    border: 2px solid rgba(5, 5, 5, 0);
+    color: white;
+}
+
+.exchanges {
+    text-align: left;
+    padding-left: 0px;
+    padding-top: 35px;
+    padding-bottom: 20px;
+}
+
+.gasSetting {
+    text-align: left;
+    padding-left: 0px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+
+.gasInput {
+    position: relative;
+    left: 5%;
+    margin-right: -10px;
+    padding: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 50px;
+    border-radius: 20px;
+    background-color: rgba(5, 5, 5, 0.50);
+    border: 2px solid rgba(5, 5, 5, 0);
+    color: white;
+}
+
+#closeSettings {
+    position: relative;
+    top: -5px;
+    left: 330px;
+}
+
+#closeSettings:hover {
+    color: rgb(24, 23, 23);
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+#exchangesButton {
+    position: relative;
+    right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    
+
+}
+
+#exchangesButton:hover {
+    height: auto;
+    width:110px;
+    background-color: rgba(255, 255, 255, 0.15);
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+#exchangesModal {
+    position: relative;
+    bottom: 50px;
+    left: -15px;
+    height: 200px;
+    width: 375px;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.55);
+    z-index: 9999;
+    overflow: scroll;
+}
+
+.exchange_row {
+    padding: 14px;
+}
+
+#closeExchanges {
+    position: relative;
+    top: 10px;
+    left: 341px;
+}
+#closeExchanges:hover {
+    cursor: pointer;
+}
+
+.exchange_row:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    cursor: pointer;
+    border-radius: 25px;
+}
+#exchangesList {
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.exchangeCheckbox {
+    pointer-events: none
+}
+
+* {
+    font-family: 'Nunito Sans', sans-serif;    
+}
+
+#receiptBackground {
+    display: none;
+    background-color: rgba(5, 5, 5, 0.3);
+
+}
+
+#receipttoken_modal{
+    text-align: center;
+    height: 250px;
+    width: 400px;
+    overflow: hidden;
+    background-color: rgba(5, 5, 5, 1);
+    position: absolute;
+    position: absolute;
+    margin: auto;
+    top: 214px;
+    right: 0;
+    bottom: 250px;
+    left: 0;
+    margin-top: 50px;
+    padding: 15px;
+    border-radius: 20px;
+    display: block;
+}
+.receiptmodal-content{
+    text-align: center;
+}
+.receiptTokenSymbolDiv {
+    text-align: center;
+    color: #A8A7A7;
+    font-weight: bold;
+    position: relative;
+    top: 35px;
+    word-break: break-all;
+    text-decoration: underline;
+    padding-right: 20px;
+    padding-left: 20px;
+
+}
+
+.receiptTokenName{
+    text-align: center;
+}
+#closeTx {
+    padding: 2px;
+    border-radius: 20px;
+    position: relative;
+    bottom: 50px;
+    left: 50px;
+    width: 80px;
+}
+.selectDivReceipt {
+    position: relative;
+    top: 100px;
+    right: 50px;
+}
+.receiptTokenDetails {
+    text-align: center;
+    color: #A8A7A7;
+    font-weight: bold;
+    position: relative;
+    top: 35px;
+}
+.receiptTokenState{
+    color: #a31c1c;
+    position: absolute;
+    bottom: 8px;
+    left: 110px;
+}
+
+
+
+#closeReceipt {
+    float: right;
+    font-size: 20px;
+    padding: 10px;
+}
+
+#closeReceipt:hover {
+    cursor: pointer;
+}
+
+
+.receiptTokenSymbol:hover {
+    color: rgb(17, 0, 255);
+    cursor: pointer;
+    text-decoration: underline;
+}

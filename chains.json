@@ -1,0 +1,103 @@
+[
+    {
+        "name": "Mainnet",
+        "logoURI": "https://raw.githubusercontent.com/sushiswap/list/master/logos/token-logos/token/eth.jpg",
+        "chainName": "Ethereum Mainnet",
+        "chainId": "0x1",
+        "symbol": "ETH",
+        "decimals": 18,
+        "blockExplorerUrls": "https://etherscan.io",
+        "rpcUrls": "https://eth-mainnet-public.unifra.io"
+    },
+    {
+        "name": "Arbitrum",
+        "logoURI": "https://developer.arbitrum.io/img/favicon.ico",
+        "chainName": "Arbitrum One",
+        "chainId": "0xa4b1",
+        "symbol": "ETH",
+        "decimals": 18,
+        "blockExplorerUrls": "https://arbiscan.io/",
+        "rpcUrls": "https://arb1.arbitrum.io/rpc"
+    },
+    {
+        "name": "Optimism",
+        "logoURI": "https://raw.githubusercontent.com/ethereum-optimism/brand-kit/main/assets/images/Profile-Logo.png",
+        "chainName": "Optimism",
+        "chainId": "0xa",
+        "symbol": "ETH",
+        "decimals": 18,
+        "blockExplorerUrls": "https://optimistic.etherscan.io",
+        "rpcUrls": "https://mainnet.optimism.io"
+    },
+    {
+        "name": "Polygon",
+        "logoURI": "https://raw.githubusercontent.com/sushiswap/list/master/logos/token-logos/token/polygon.jpg",
+        "chainName": "Polygon Mainnet",
+        "chainId": "0x89",
+        "symbol": "MATIC",
+        "decimals": 18,
+        "blockExplorerUrls": "https://polygonscan.com",
+        "rpcUrls": "https://polygon-rpc.com"
+    },
+    {
+        "name": "BSC",
+        "logoURI": "https://raw.githubusercontent.com/sushiswap/list/master/logos/token-logos/network/bsc/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c.jpg",
+        "chainName": "Binance Smart Chain Mainnet",
+        "chainId": "0x38",
+        "symbol": "BNB",
+        "decimals": 18,
+        "blockExplorerUrls": "https://bscscan.com",
+        "rpcUrls": "https://bsc-dataseed1.binance.org"
+    },
+    {
+        "name": "Fantom",
+        "logoURI": "https://raw.githubusercontent.com/sushiswap/list/master/logos/token-logos/token/ftm.jpg",
+        "chainName": "Fantom Opera",
+        "chainId": "0xfa",
+        "symbol": "FTM",
+        "decimals": 18,
+        "blockExplorerUrls": "https://ftmscan.com",
+        "rpcUrls": "https://rpc.ftm.tools"
+    },
+    {
+        "name": "Celo",
+        "logoURI": "https://raw.githubusercontent.com/sushiswap/list/master/logos/token-logos/token/celo.jpg",
+        "chainName": "Celo Mainnet",
+        "chainId": "0xa4ec",
+        "symbol": "CELO",
+        "decimals": 18,
+        "blockExplorerUrls": "https://celoscan.io",
+        "rpcUrls": "https://forno.celo.org"
+    },
+    {
+        "name": "Avalanche",
+        "logoURI": "https://raw.githubusercontent.com/sushiswap/list/master/logos/token-logos/network/avalanche/0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7.jpg",
+        "chainName": "Avalanche C-Chain",
+        "chainId": "0xa86a",
+        "symbol": "AVAX",
+        "decimals": 18,
+        "blockExplorerUrls": "https://snowtrace.io",
+        "rpcUrls": "https://api.avax.network/ext/bc/C/rpc"
+    },
+    {
+        "name": "Goerli",
+        "logoURI": "https://raw.githubusercontent.com/Pymmdrza/Cryptocurrency_Logos/mainx/PNG/eth.png",
+        "chainName": "Ethereum Goerli Testnet",
+        "chainId": "0x5",
+        "symbol": "ETH",
+        "decimals": 18,
+        "blockExplorerUrls": "https://goerli.etherscan.io/",
+        "rpcUrls": "https://goerli.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161"
+    },
+    
+    {
+        "name": "Mumbai",
+        "logoURI": "https://raw.githubusercontent.com/sushiswap/list/master/logos/token-logos/token/polygon.jpg",
+        "chainName": "Mumbai",
+        "chainId": "0x13881",
+        "symbol": "MATIC",
+        "decimals": 18,
+        "blockExplorerUrls": "https://mumbai.polygonscan.com",
+        "rpcUrls": "https://matic-mumbai.chainstacklabs.com"
+    }
+]
